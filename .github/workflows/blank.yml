@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo "my">README.md
+          git config --local user.email "lovefish360@163.com"
+          git config --local user.name "fishseven"
+          git commit -m "update readme.md"
+      - name: Push changes
+        uses:  ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
