@@ -37,6 +37,7 @@ jobs:
           echo "my">README.md
           git config --local user.email "lovefish360@163.com"
           git config --local user.name "fishseven"
+          git add .
           git commit -m "update readme.md"
       - name: Push changes
         uses:  ad-m/github-push-action@master
