@@ -42,7 +42,4 @@ jobs:
           git config --local user.name "fishseven"
           git add .
           git commit -m "update readme.md"
-      - name: Push changes
-        uses:  ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
+          echo ${{ secrets.ACCESS_TOKEN }}
